@@ -1,0 +1,19 @@
+services:
+  rcx-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: build
+    network_mode: host
+    environment:
+      PORT: 4000
+      NODE_ENV: development
+      API_URL: http://localhost:3000
+    volumes:
+      - ./src:/app/src
+      - ./server/src:/app/server/src
+      - ./public:/app/public
+      - ./vite.config.ts:/app/vite.config.ts
+      - ./index.html:/app/index.html
+    command: npm run dev -- --host 0.0.0.0 --port 4000
+    restart: unless-stopped

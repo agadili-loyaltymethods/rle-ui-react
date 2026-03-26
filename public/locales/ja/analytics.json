@@ -1,0 +1,39 @@
+{
+  "title": "分析",
+  "dateRange": "期間",
+  "comparisonMode": "比較モード",
+  "charts": {
+    "membersByDma": "DMA別会員数",
+    "membersByTier": "ティア別会員数",
+    "membersByEnrollSource": "登録元別会員数",
+    "membersByEnrollChannel": "登録チャネル別会員数",
+    "membersBySegment": "セグメント別会員数",
+    "promotionParticipation": "プロモーション参加状況",
+    "purseBalances": "ポイント残高分布",
+    "rewardBalances": "リワード残高",
+    "rewardRedemption": "リワード交換状況",
+    "offerRedemption": "オファー利用状況",
+    "productRedemption": "商品交換状況",
+    "topProducts": "人気商品",
+    "averageTicket": "平均購入額"
+  },
+  "filters": {
+    "program": "プログラム",
+    "dateFrom": "開始日",
+    "dateTo": "終了日",
+    "groupBy": "グループ化",
+    "metric": "指標"
+  },
+  "labels": {
+    "count": "件数",
+    "amount": "金額",
+    "percentage": "割合",
+    "trend": "トレンド",
+    "total": "合計",
+    "average": "平均",
+    "drillDown": "クリックして詳細を表示",
+    "noData": "選択された期間の分析データがありません",
+    "exportChart": "チャートをエクスポート",
+    "comparePrevious": "前期間と比較"
+  }
+}

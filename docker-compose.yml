@@ -1,0 +1,12 @@
+services:
+  rcx-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: host
+    environment:
+      PORT: 4000
+      NODE_ENV: production
+      API_URL: http://localhost:3000
+      DISABLE_HTTPS: "true"
+    restart: unless-stopped

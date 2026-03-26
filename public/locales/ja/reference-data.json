@@ -1,0 +1,103 @@
+{
+  "title": "マスターデータ",
+  "organizations": {
+    "title": "組織",
+    "name": "名前",
+    "description": "説明",
+    "addOrg": "組織を追加",
+    "editOrg": "組織を編集",
+    "noOrgs": "組織が見つかりません"
+  },
+  "segments": {
+    "title": "セグメント",
+    "name": "名前",
+    "type": "種類",
+    "description": "説明",
+    "addSegment": "セグメントを追加",
+    "editSegment": "セグメントを編集",
+    "noSegments": "セグメントが見つかりません"
+  },
+  "locations": {
+    "title": "店舗",
+    "name": "名前",
+    "number": "番号",
+    "city": "市区町村",
+    "state": "都道府県",
+    "country": "国",
+    "zipCode": "郵便番号",
+    "timeZone": "タイムゾーン",
+    "geoPoint": "位置情報",
+    "addLocation": "店舗を追加",
+    "editLocation": "店舗を編集",
+    "noLocations": "店舗が見つかりません"
+  },
+  "products": {
+    "title": "商品",
+    "name": "名前",
+    "sku": "SKU",
+    "upc": "UPC",
+    "category": "カテゴリー",
+    "subcategory": "サブカテゴリー",
+    "style": "スタイル",
+    "cost": "コスト",
+    "effectiveDate": "開始日",
+    "expirationDate": "終了日",
+    "addProduct": "商品を追加",
+    "editProduct": "商品を編集",
+    "noProducts": "商品が見つかりません"
+  },
+  "dma": {
+    "title": "DMA",
+    "titleFull": "指定市場エリア",
+    "name": "名前",
+    "zipCodes": "郵便番号",
+    "zipCodeCount": "{{count}}件の郵便番号",
+    "addDma": "DMAを追加",
+    "editDma": "DMAを編集",
+    "noDmas": "DMAが見つかりません"
+  },
+  "enums": {
+    "title": "列挙値",
+    "type": "種類",
+    "value": "値",
+    "valueType": "値の型",
+    "label": "ラベル",
+    "displayType": "表示タイプ",
+    "context": "コンテキスト",
+    "enumType": "列挙タイプ",
+    "language": "言語",
+    "addEnum": "列挙値を追加",
+    "editEnum": "列挙値を編集",
+    "noEnums": "列挙値が見つかりません"
+  },
+  "namedLists": {
+    "title": "名前付きリスト",
+    "name": "名前",
+    "modelType": "モデルタイプ",
+    "type": "種類",
+    "query": "クエリ",
+    "count": "件数",
+    "refreshDate": "最終更新日",
+    "refreshedBy": "更新者",
+    "inclusionParams": "包含パラメータ",
+    "previewData": "データプレビュー",
+    "refreshList": "リストを更新",
+    "addNamedList": "名前付きリストを追加",
+    "editNamedList": "名前付きリストを編集",
+    "noNamedLists": "名前付きリストが見つかりません"
+  },
+  "loyaltyCards": {
+    "title": "ロイヤルティカード",
+    "cardType": "カード種類",
+    "loyaltyType": "ロイヤルティ種類",
+    "status": "ステータス",
+    "channel": "チャネル",
+    "addCard": "カードを追加",
+    "editCard": "カードを編集",
+    "noCards": "ロイヤルティカードが見つかりません"
+  },
+  "bulkImport": "一括インポート",
+  "bulkExport": "一括エクスポート",
+  "importCsv": "CSVからインポート",
+  "exportCsv": "CSVへエクスポート"
+}

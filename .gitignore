@@ -1,0 +1,16 @@
+node_modules/
+dist/
+dist-server/
+.env
+.env.*
+!.env.example
+*.local
+.DS_Store
+*.log
+*.tsbuildinfo
+.playwright-mcp/
+screenshots/
+test-results/
+.worktrees/
+coverage/
+test-results.xml

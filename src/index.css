@@ -1,0 +1,500 @@
+@import "tailwindcss";
+
+/* ── Design System Custom Properties (from design2.json) ── */
+:root {
+  /* Brand */
+  --color-brand-primary: #F47A20;
+  --color-brand-primary-hover: #D86514;
+  --color-brand-primary-light: #FFE6D2;
+
+  /* Backgrounds */
+  --color-bg-page: #F7F8FA;
+  --color-bg-card: #FFFFFF;
+  --color-bg-subtle: #F2F2F2;
+  --color-bg-sidebar: #F3F4F6;
+  --color-bg-dark-band: #F47A20;
+  /* Dark surface — used for the login brand panel and other always-dark decorative panels */
+  --color-bg-dark-surface: #1A1D23;
+
+  /* Text */
+  --color-text-primary: #1F2933;
+  --color-text-secondary: #4B5563;
+  --color-text-muted: #6B7280;
+  --color-text-tertiary: #9CA3AF;
+  --color-text-inverse: #FFFFFF;
+
+  /* Borders */
+  --color-border-light: #E5E7EB;
+  --color-border-medium: #D1D5DB;
+
+  /* Semantic / State */
+  --color-success: #22C55E;
+  --color-info: #3B82F6;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-error-hover: #DC2626;
+
+  /* Semantic state — light backgrounds (for badges, chips, banners) */
+  --color-success-light: #DCFCE7;
+  --color-info-light: #DBEAFE;
+  --color-warning-light: #FEF3C7;
+  --color-error-light: #FEE2E2;
+
+  /* Semantic state — on-color text (text on top of light backgrounds) */
+  --color-on-success: #166534;
+  --color-on-info: #1D4ED8;
+  --color-on-warning: #92400E;
+  --color-on-error: #991B1B;
+
+  /* Accent palette — complements brand orange #F47A20 */
+  --color-accent-amber: #E8920D;
+  --color-accent-amber-light: #FEF3C7;
+  --color-accent-teal: #0D9488;
+  --color-accent-teal-light: #CCFBF1;
+  --color-accent-indigo: #6366F1;
+  --color-accent-indigo-light: #E0E7FF;
+  --color-accent-rose: #E11D48;
+  --color-accent-rose-light: #FFE4E6;
+  --color-accent-violet: #7C3AED;
+  --color-accent-violet-light: #EDE9FE;
+  --color-accent-sky: #0284C7;
+  --color-accent-sky-light: #E0F2FE;
+  --color-accent-emerald: #059669;
+  --color-accent-emerald-light: #D1FAE5;
+
+  /* Shadows */
+  --shadow-card: 0px 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-dropdown: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  --shadow-modal: 0px 12px 30px rgba(0, 0, 0, 0.18);
+
+  /* Layout */
+  --sidebar-width: 260px;
+  --sidebar-collapsed-width: 64px;
+  --header-height: 56px;
+  --max-content-width: 1280px;
+  --hero-height: 640px;
+
+  /* Layout — component sizing tokens */
+  --width-search-bar: 240px;
+  --width-popover-sm: 280px;
+  --width-popover-md: 320px;
+  --width-form-max: 600px;         /* Max width for single-column form panels */
+  --width-tier-panel: 220px;       /* Tier level list sidebar panel */
+  --modal-width-sm: 400px;
+  --modal-width-md: 480px;
+  --modal-width-lg: 560px;
+
+  --width-auth-card: 24rem;          /* Login / auth form card */
+  --width-auth-hero-text: 26rem;     /* Hero text block on auth panel */
+
+  /* Layout — height tokens */
+  --height-dropdown-max: 240px;    /* Popovers, select lists, scrollable type pickers */
+  --height-dropdown-sm: 200px;     /* Compact dropdown/result lists */
+  --height-dropdown-lg: 380px;     /* Larger dropdown areas */
+  --height-split-pane: 480px;      /* Full split-pane editor min height */
+  --height-split-pane-sm: 420px;   /* Narrow split-pane min height */
+  --height-table-max: 600px;       /* Virtualized table max height */
+
+  /* Component: Button — size variants */
+  --button-height-sm: 36px;
+  --button-height-lg: 52px;
+  --button-padding-x-sm: 14px;
+  --button-padding-x-lg: 28px;
+
+  /* Animation */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --ease: ease-in-out;
+
+  /* Component: Button */
+  --button-height: 44px;
+  --button-padding-x: 20px;
+  --button-font-size: 14px;
+  --button-font-size-sm: 13px;
+  --button-font-size-lg: 16px;
+  --button-radius: 8px;
+  --button-bg: #F47A20;
+  --button-color: #FFFFFF;
+  --button-hover: #D86514;
+  --button-secondary-bg: #FFFFFF;
+  --button-secondary-color: #F47A20;
+  --button-secondary-border: #F47A20;
+  --button-ghost-bg: transparent;
+  --button-ghost-color: #4B5563;
+
+  /* Component: Input */
+  --input-height: 44px;
+  --input-radius: 8px;
+  --input-border: #D1D5DB;
+  --input-focus-border: #F47A20;
+  --input-padding-x: 12px;
+  --input-bg: #FFFFFF;
+
+  /* Component: Sidebar */
+  --sidebar-bg: #F3F4F6;
+  --sidebar-item-height: 44px;
+  --sidebar-active-bg: #E8F0FE;
+  --sidebar-active-indicator: #F47A20;
+
+  /* Component: Badge */
+  --badge-radius: 9999px;
+  --badge-padding-x: 12px;
+  --badge-padding-y: 4px;
+  --badge-font-size: 12px;
+
+  /* Component: Card */
+  --card-bg: #FFFFFF;
+  --card-padding: 24px;
+  --card-radius: 12px;
+  --card-border: #E5E7EB;
+
+  /* Component: Table */
+  --table-row-height: 48px;
+  --table-header-bg: #F7F8FA;
+  --table-border: #E5E7EB;
+  --table-hover: #F2F2F2;
+  --table-selected: #EFF6FF;
+  --table-selected-hover: #DBEAFE;
+  --table-pagination-active: #FFE6D2;
+
+  /* Z-Index */
+  --z-dropdown: 1000;
+  --z-sticky: 1100;
+  --z-modal: 1200;
+  --z-toast: 1300;
+}
+
+/* ── Dark Mode ── */
+.dark {
+  --color-bg-page: #0F1117;
+  --color-bg-card: #1A1D27;
+  --color-bg-subtle: #242733;
+  --color-bg-sidebar: #141620;
+
+  --color-text-primary: #F0F1F3;
+  --color-text-secondary: #A0A4B0;
+  --color-text-muted: #6B7080;
+  --color-text-tertiary: #6B7080;
+
+  --color-border-light: #2A2D3A;
+  --color-border-medium: #383C4A;
+
+  --shadow-card: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-card-hover: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-dropdown: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  --shadow-modal: 0px 12px 30px rgba(0, 0, 0, 0.6);
+
+  --input-bg: #1A1D27;
+  --input-border: #383C4A;
+  --card-bg: #1A1D27;
+  --card-border: #2A2D3A;
+  --table-header-bg: #1A1D27;
+  --table-border: #2A2D3A;
+  --table-hover: #242733;
+  --table-selected: rgba(59, 130, 246, 0.12);
+  --table-selected-hover: rgba(59, 130, 246, 0.18);
+  --table-pagination-active: rgba(244, 122, 32, 0.18);
+  --sidebar-bg: #141620;
+  --sidebar-active-bg: rgba(244, 122, 32, 0.15);
+  --button-secondary-bg: #1A1D27;
+  --button-ghost-color: #A0A4B0;
+
+  --color-brand-light: rgba(244, 122, 32, 0.18);
+
+  --color-accent-amber-light: rgba(232, 146, 13, 0.15);
+  --color-accent-teal-light: rgba(13, 148, 136, 0.15);
+  --color-accent-indigo-light: rgba(99, 102, 241, 0.15);
+  --color-accent-rose-light: rgba(225, 29, 72, 0.15);
+  --color-accent-violet-light: rgba(124, 58, 237, 0.15);
+  --color-accent-sky-light: rgba(2, 132, 199, 0.15);
+  --color-accent-emerald-light: rgba(5, 150, 105, 0.15);
+
+  /* Semantic state — light backgrounds (dark mode uses low-opacity tints) */
+  --color-success-light: rgba(34, 197, 94, 0.15);
+  --color-info-light: rgba(59, 130, 246, 0.15);
+  --color-warning-light: rgba(245, 158, 11, 0.15);
+  --color-error-light: rgba(239, 68, 68, 0.15);
+
+  /* Semantic state — on-color text (dark mode: bright variants) */
+  --color-on-success: #4ADE80;
+  --color-on-info: #60A5FA;
+  --color-on-warning: #FCD34D;
+  --color-on-error: #F87171;
+}
+
+/* ── Tailwind Theme ── */
+@theme {
+  /* Fonts */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: Menlo, Monaco, Consolas, monospace;
+
+  /* Brand colors */
+  --color-brand: #F47A20;
+  --color-brand-hover: #D86514;
+  --color-brand-light: #FFE6D2;
+
+  /* Background colors (reference CSS vars for dark mode) */
+  --color-page: var(--color-bg-page);
+  --color-card: var(--color-bg-card);
+  --color-subtle: var(--color-bg-subtle);
+  --color-sidebar: var(--color-bg-sidebar);
+  --color-dark-band: var(--color-bg-dark-band);
+  --color-dark-surface: var(--color-bg-dark-surface);
+
+  /* Foreground / text */
+  --color-foreground: var(--color-text-primary);
+  --color-foreground-secondary: var(--color-text-secondary);
+  --color-foreground-muted: var(--color-text-muted);
+  --color-foreground-tertiary: var(--color-text-tertiary);
+  --color-foreground-inverse: var(--color-text-inverse);
+
+  /* Borders */
+  --color-border: var(--color-border-light);
+  --color-border-strong: var(--color-border-medium);
+
+  /* Semantic / state */
+  --color-success: #22C55E;
+  --color-info: #3B82F6;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-error-hover: var(--color-error-hover);
+
+  /* Semantic state — light backgrounds */
+  --color-success-light: var(--color-success-light);
+  --color-info-light: var(--color-info-light);
+  --color-warning-light: var(--color-warning-light);
+  --color-error-light: var(--color-error-light);
+
+  /* Semantic state — on-color text */
+  --color-on-success: var(--color-on-success);
+  --color-on-info: var(--color-on-info);
+  --color-on-warning: var(--color-on-warning);
+  --color-on-error: var(--color-on-error);
+
+  /* Accent palette */
+  --color-accent-amber: var(--color-accent-amber);
+  --color-accent-amber-light: var(--color-accent-amber-light);
+  --color-accent-teal: var(--color-accent-teal);
+  --color-accent-teal-light: var(--color-accent-teal-light);
+  --color-accent-indigo: var(--color-accent-indigo);
+  --color-accent-indigo-light: var(--color-accent-indigo-light);
+  --color-accent-rose: var(--color-accent-rose);
+  --color-accent-rose-light: var(--color-accent-rose-light);
+  --color-accent-violet: var(--color-accent-violet);
+  --color-accent-violet-light: var(--color-accent-violet-light);
+  --color-accent-sky: var(--color-accent-sky);
+  --color-accent-sky-light: var(--color-accent-sky-light);
+  --color-accent-emerald: var(--color-accent-emerald);
+  --color-accent-emerald-light: var(--color-accent-emerald-light);
+
+  /* Shadows */
+  --shadow-card: var(--shadow-card);
+  --shadow-card-hover: var(--shadow-card-hover);
+  --shadow-dropdown: var(--shadow-dropdown);
+  --shadow-modal: var(--shadow-modal);
+
+  /* Border radius */
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 9999px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  --spacing-4xl: 96px;
+
+  /* Animation */
+  --animate-fast: 150ms ease-in-out;
+  --animate-normal: 250ms ease-in-out;
+  --animate-slow: 400ms ease;
+}
+
+/* ── Typography Utility Classes ── */
+@utility text-h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@utility text-h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+@utility text-h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+@utility text-h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+@utility text-body-lg {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@utility text-body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@utility text-body-sm {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@utility text-caption {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+@utility text-metric {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+/* Large display heading — used for hero/marketing surfaces (e.g. login brand panel) */
+@utility text-display {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+/* Dense UI typography — for data-dense components (tier editors, purse cards, etc.) */
+@utility text-label {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+@utility text-caption-xs {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* Button font-size utilities — font-size only, no line-height, to preserve icon-text alignment */
+@utility text-button {
+  font-size: var(--button-font-size);
+}
+
+@utility text-button-sm {
+  font-size: var(--button-font-size-sm);
+}
+
+@utility text-button-lg {
+  font-size: var(--button-font-size-lg);
+}
+
+/* ── Base Resets ── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-color: var(--color-border-light);
+  }
+
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-page);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  /* Interactive elements should always show pointer cursor */
+  button,
+  [role="tab"],
+  [role="button"],
+  [role="menuitem"],
+  input[type="checkbox"],
+  input[type="radio"],
+  select,
+  summary {
+    cursor: pointer;
+  }
+
+
+  /* Styled checkboxes — appearance-none + white SVG checkmark on brand bg */
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid var(--color-border-medium);
+    border-radius: var(--radius-sm);
+    background-color: white;
+  }
+
+  input[type="checkbox"]:checked {
+    background-color: var(--color-brand-primary);
+    border-color: var(--color-brand-primary);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 6L5 8.5L9.5 3.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  input[type="checkbox"]:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  button:disabled,
+  input:disabled,
+  select:disabled {
+    cursor: not-allowed;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-border-medium);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-text-muted);
+  }
+}
+
+/* ── Radix Popover inside modal Dialog fix ─────────────────────────────────────
+   Radix Dialog sets pointer-events:none on <body> for scroll-lock.
+   Popover portals render under <body>, so they inherit the block.
+   This restores pointer events (including wheel scroll) on popover content. */
+[data-radix-popper-content-wrapper] {
+  pointer-events: auto !important;
+}

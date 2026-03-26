@@ -1,0 +1,103 @@
+{
+  "title": "Reference Data",
+  "organizations": {
+    "title": "Organizations",
+    "name": "Name",
+    "description": "Description",
+    "addOrg": "Add Organization",
+    "editOrg": "Edit Organization",
+    "noOrgs": "No organizations found"
+  },
+  "segments": {
+    "title": "Segments",
+    "name": "Name",
+    "type": "Type",
+    "description": "Description",
+    "addSegment": "Add Segment",
+    "editSegment": "Edit Segment",
+    "noSegments": "No segments found"
+  },
+  "locations": {
+    "title": "Locations",
+    "name": "Name",
+    "number": "Number",
+    "city": "City",
+    "state": "State",
+    "country": "Country",
+    "zipCode": "Zip Code",
+    "timeZone": "Time Zone",
+    "geoPoint": "Geo Point",
+    "addLocation": "Add Location",
+    "editLocation": "Edit Location",
+    "noLocations": "No locations found"
+  },
+  "products": {
+    "title": "Products",
+    "name": "Name",
+    "sku": "SKU",
+    "upc": "UPC",
+    "category": "Category",
+    "subcategory": "Subcategory",
+    "style": "Style",
+    "cost": "Cost",
+    "effectiveDate": "Effective Date",
+    "expirationDate": "Expiration Date",
+    "addProduct": "Add Product",
+    "editProduct": "Edit Product",
+    "noProducts": "No products found"
+  },
+  "dma": {
+    "title": "DMAs",
+    "titleFull": "Designated Market Areas",
+    "name": "Name",
+    "zipCodes": "Zip Codes",
+    "zipCodeCount": "{{count}} zip codes",
+    "addDma": "Add DMA",
+    "editDma": "Edit DMA",
+    "noDmas": "No DMAs found"
+  },
+  "enums": {
+    "title": "Enums",
+    "type": "Type",
+    "value": "Value",
+    "valueType": "Value Type",
+    "label": "Label",
+    "displayType": "Display Type",
+    "context": "Context",
+    "enumType": "Enum Type",
+    "language": "Language",
+    "addEnum": "Add Enum",
+    "editEnum": "Edit Enum",
+    "noEnums": "No enums found"
+  },
+  "namedLists": {
+    "title": "Named Lists",
+    "name": "Name",
+    "modelType": "Model Type",
+    "type": "Type",
+    "query": "Query",
+    "count": "Count",
+    "refreshDate": "Last Refreshed",
+    "refreshedBy": "Refreshed By",
+    "inclusionParams": "Inclusion Params",
+    "previewData": "Preview Data",
+    "refreshList": "Refresh List",
+    "addNamedList": "Add Named List",
+    "editNamedList": "Edit Named List",
+    "noNamedLists": "No named lists found"
+  },
+  "loyaltyCards": {
+    "title": "Loyalty Cards",
+    "cardType": "Card Type",
+    "loyaltyType": "Loyalty Type",
+    "status": "Status",
+    "channel": "Channel",
+    "addCard": "Add Card",
+    "editCard": "Edit Card",
+    "noCards": "No loyalty cards found"
+  },
+  "bulkImport": "Bulk Import",
+  "bulkExport": "Bulk Export",
+  "importCsv": "Import from CSV",
+  "exportCsv": "Export to CSV"
+}

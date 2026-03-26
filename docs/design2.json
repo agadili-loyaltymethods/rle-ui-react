@@ -1,0 +1,317 @@
+{
+  "meta": {
+    "name": "ReactorCX Design System",
+    "version": "2.0.0",
+    "philosophy": "Enterprise-grade, clean, high-trust SaaS UI with strong brand accent and data clarity. Supports light and dark modes."
+  },
+
+  "color": {
+    "brand": {
+      "primary": "#F47A20",
+      "primaryHover": "#D86514",
+      "primaryLight": "#FFE6D2"
+    },
+    "background": {
+      "page": "#F7F8FA",
+      "card": "#FFFFFF",
+      "subtle": "#F2F2F2",
+      "sidebar": "#F3F4F6",
+      "darkBand": "#F47A20",
+      "darkSurface": "#1A1D23"
+    },
+    "text": {
+      "primary": "#1F2933",
+      "secondary": "#4B5563",
+      "muted": "#6B7280",
+      "tertiary": "#9CA3AF",
+      "inverse": "#FFFFFF"
+    },
+    "border": {
+      "light": "#E5E7EB",
+      "medium": "#D1D5DB"
+    },
+    "state": {
+      "success": "#22C55E",
+      "info": "#3B82F6",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "errorHover": "#DC2626"
+    },
+    "stateLight": {
+      "success": "#DCFCE7",
+      "info": "#DBEAFE",
+      "warning": "#FEF3C7",
+      "error": "#FEE2E2"
+    },
+    "stateOnColor": {
+      "success": "#166534",
+      "info": "#1D4ED8",
+      "warning": "#92400E",
+      "error": "#991B1B"
+    },
+    "accent": {
+      "amber":       { "base": "#E8920D", "light": "#FEF3C7" },
+      "teal":        { "base": "#0D9488", "light": "#CCFBF1" },
+      "indigo":      { "base": "#6366F1", "light": "#E0E7FF" },
+      "rose":        { "base": "#E11D48", "light": "#FFE4E6" },
+      "violet":      { "base": "#7C3AED", "light": "#EDE9FE" },
+      "sky":         { "base": "#0284C7", "light": "#E0F2FE" },
+      "emerald":     { "base": "#059669", "light": "#D1FAE5" }
+    }
+  },
+
+  "darkMode": {
+    "_comment": "Applied via .dark class on root element. Overrides :root CSS variables.",
+    "background": {
+      "page": "#0F1117",
+      "card": "#1A1D27",
+      "subtle": "#242733",
+      "sidebar": "#141620"
+    },
+    "text": {
+      "primary": "#F0F1F3",
+      "secondary": "#A0A4B0",
+      "muted": "#6B7080",
+      "tertiary": "#6B7080"
+    },
+    "border": {
+      "light": "#2A2D3A",
+      "medium": "#383C4A"
+    },
+    "shadow": {
+      "card": "0px 1px 3px rgba(0,0,0,0.3)",
+      "cardHover": "0px 4px 12px rgba(0,0,0,0.4)",
+      "dropdown": "0px 8px 20px rgba(0,0,0,0.5)",
+      "modal": "0px 12px 30px rgba(0,0,0,0.6)"
+    },
+    "brandLight": "rgba(244, 122, 32, 0.18)",
+    "accentLight": {
+      "_comment": "All accent-light colors use 15% opacity rgba tints in dark mode",
+      "amber":   "rgba(232, 146, 13, 0.15)",
+      "teal":    "rgba(13, 148, 136, 0.15)",
+      "indigo":  "rgba(99, 102, 241, 0.15)",
+      "rose":    "rgba(225, 29, 72, 0.15)",
+      "violet":  "rgba(124, 58, 237, 0.15)",
+      "sky":     "rgba(2, 132, 199, 0.15)",
+      "emerald": "rgba(5, 150, 105, 0.15)"
+    },
+    "stateLight": {
+      "success": "rgba(34, 197, 94, 0.15)",
+      "info":    "rgba(59, 130, 246, 0.15)",
+      "warning": "rgba(245, 158, 11, 0.15)",
+      "error":   "rgba(239, 68, 68, 0.15)"
+    },
+    "stateOnColor": {
+      "success": "#4ADE80",
+      "info":    "#60A5FA",
+      "warning": "#FCD34D",
+      "error":   "#F87171"
+    },
+    "input": {
+      "background": "#1A1D27",
+      "border": "#383C4A"
+    },
+    "table": {
+      "headerBackground": "#1A1D27",
+      "border": "#2A2D3A",
+      "hover": "#242733",
+      "selected": "rgba(59, 130, 246, 0.12)",
+      "selectedHover": "rgba(59, 130, 246, 0.18)",
+      "paginationActive": "rgba(244, 122, 32, 0.18)"
+    },
+    "sidebar": {
+      "background": "#141620",
+      "activeBackground": "rgba(244, 122, 32, 0.15)"
+    },
+    "button": {
+      "secondaryBackground": "#1A1D27",
+      "ghostColor": "#A0A4B0"
+    }
+  },
+
+  "typography": {
+    "fontFamily": {
+      "primary": "Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+      "mono": "Menlo, Monaco, Consolas, monospace"
+    },
+    "scale": {
+      "display":    { "size": "3.5rem", "weight": 800, "lineHeight": 1.08, "letterSpacing": "-0.025em" },
+      "h1":         { "size": "40px",   "weight": 700, "lineHeight": 1.2 },
+      "h2":         { "size": "32px",   "weight": 700, "lineHeight": 1.25 },
+      "h3":         { "size": "24px",   "weight": 600, "lineHeight": 1.3 },
+      "h4":         { "size": "20px",   "weight": 600, "lineHeight": 1.4 },
+      "bodyLarge":  { "size": "18px",   "weight": 400, "lineHeight": 1.6 },
+      "body":       { "size": "16px",   "weight": 400, "lineHeight": 1.6 },
+      "bodySmall":  { "size": "14px",   "weight": 400, "lineHeight": 1.5 },
+      "label":      { "size": "13px",   "weight": 500, "lineHeight": 1.4 },
+      "caption":    { "size": "12px",   "weight": 400, "lineHeight": 1.4 },
+      "captionXs":  { "size": "11px",   "weight": 400, "lineHeight": 1.3 },
+      "metric":     { "size": "56px",   "weight": 800, "lineHeight": 1.1 }
+    },
+    "button": {
+      "_comment": "Font-size only (no line-height) to preserve icon-text alignment. Applied via CVA in Button component.",
+      "default": "14px",
+      "sm": "13px",
+      "lg": "16px"
+    }
+  },
+
+  "spacing": {
+    "unit": 4,
+    "scale": {
+      "xs": 4,
+      "sm": 8,
+      "md": 16,
+      "lg": 24,
+      "xl": 32,
+      "2xl": 48,
+      "3xl": 64,
+      "4xl": 96
+    },
+    "layout": {
+      "pagePadding": 32,
+      "cardPadding": 24,
+      "sectionSpacing": 64,
+      "gridGap": 24
+    }
+  },
+
+  "radius": {
+    "none": 0,
+    "sm": 4,
+    "md": 8,
+    "lg": 12,
+    "xl": 16,
+    "pill": 9999
+  },
+
+  "shadow": {
+    "card": "0px 1px 3px rgba(0,0,0,0.08)",
+    "cardHover": "0px 4px 12px rgba(0,0,0,0.12)",
+    "dropdown": "0px 8px 20px rgba(0,0,0,0.15)",
+    "modal": "0px 12px 30px rgba(0,0,0,0.18)"
+  },
+
+  "sizing": {
+    "_comment": "Named CSS variable tokens used in components. Use var(--token-name) in Tailwind arbitrary values.",
+    "width": {
+      "searchBar": 240,
+      "popoverSm": 280,
+      "popoverMd": 320,
+      "formMax": 600,
+      "tierPanel": 220,
+      "authCard": "24rem",
+      "authHeroText": "26rem"
+    },
+    "height": {
+      "dropdownMax": 240,
+      "dropdownSm": 200,
+      "dropdownLg": 380,
+      "splitPane": 480,
+      "splitPaneSm": 420,
+      "tableMax": 600
+    },
+    "modal": {
+      "sm": 400,
+      "md": 480,
+      "lg": 560
+    }
+  },
+
+  "component": {
+    "button": {
+      "height": 44,
+      "heightSm": 36,
+      "heightLg": 52,
+      "paddingX": 20,
+      "paddingXSm": 14,
+      "paddingXLg": 28,
+      "radius": 8,
+      "primary": {
+        "background": "#F47A20",
+        "color": "#FFFFFF",
+        "hover": "#D86514"
+      },
+      "secondary": {
+        "background": "#FFFFFF",
+        "color": "#F47A20",
+        "border": "#F47A20"
+      },
+      "ghost": {
+        "background": "transparent",
+        "color": "#4B5563"
+      }
+    },
+
+    "card": {
+      "background": "#FFFFFF",
+      "padding": 24,
+      "radius": 12,
+      "border": "#E5E7EB",
+      "shadow": "card"
+    },
+
+    "input": {
+      "height": 44,
+      "radius": 8,
+      "border": "#D1D5DB",
+      "focusBorder": "#F47A20",
+      "paddingX": 12,
+      "background": "#FFFFFF"
+    },
+
+    "sidebar": {
+      "width": 260,
+      "collapsedWidth": 64,
+      "background": "#F3F4F6",
+      "itemHeight": 44,
+      "activeBackground": "#E8F0FE",
+      "activeIndicator": "#F47A20"
+    },
+
+    "badge": {
+      "radius": 9999,
+      "paddingX": 12,
+      "paddingY": 4,
+      "fontSize": 12
+    },
+
+    "table": {
+      "rowHeight": 48,
+      "headerBackground": "#F7F8FA",
+      "border": "#E5E7EB",
+      "hover": "#F2F2F2",
+      "selected": "#EFF6FF",
+      "selectedHover": "#DBEAFE",
+      "paginationActive": "#FFE6D2"
+    }
+  },
+
+  "layout": {
+    "maxContentWidth": 1280,
+    "headerHeight": 56,
+    "marketingHeroHeight": 640,
+    "sidebarLayout": {
+      "sidebarWidth": 260,
+      "sidebarCollapsedWidth": 64,
+      "contentPadding": 32
+    },
+    "grid": {
+      "columns": 12,
+      "gutter": 24
+    }
+  },
+
+  "animation": {
+    "fast": "150ms ease-in-out",
+    "normal": "250ms ease-in-out",
+    "slow": "400ms ease"
+  },
+
+  "zIndex": {
+    "dropdown": 1000,
+    "sticky": 1100,
+    "modal": 1200,
+    "toast": 1300
+  }
+}

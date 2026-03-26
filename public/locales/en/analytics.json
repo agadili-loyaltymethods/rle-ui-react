@@ -1,0 +1,39 @@
+{
+  "title": "Analytics",
+  "dateRange": "Date Range",
+  "comparisonMode": "Comparison Mode",
+  "charts": {
+    "membersByDma": "Members by DMA",
+    "membersByTier": "Members by Tier",
+    "membersByEnrollSource": "Members by Enroll Source",
+    "membersByEnrollChannel": "Members by Enroll Channel",
+    "membersBySegment": "Members by Segment",
+    "promotionParticipation": "Promotion Participation",
+    "purseBalances": "Purse Balances",
+    "rewardBalances": "Reward Balances",
+    "rewardRedemption": "Reward Redemption",
+    "offerRedemption": "Offer Redemption",
+    "productRedemption": "Product Redemption",
+    "topProducts": "Top Products",
+    "averageTicket": "Average Ticket"
+  },
+  "filters": {
+    "program": "Program",
+    "dateFrom": "From",
+    "dateTo": "To",
+    "groupBy": "Group By",
+    "metric": "Metric"
+  },
+  "labels": {
+    "count": "Count",
+    "amount": "Amount",
+    "percentage": "Percentage",
+    "trend": "Trend",
+    "total": "Total",
+    "average": "Average",
+    "drillDown": "Click to drill down",
+    "noData": "No analytics data available for the selected period",
+    "exportChart": "Export Chart",
+    "comparePrevious": "Compare to previous period"
+  }
+}
